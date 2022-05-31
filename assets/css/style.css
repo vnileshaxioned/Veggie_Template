@@ -139,6 +139,7 @@ nav ul li a {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    justify-content: center;
     padding: 88px 0 180px;
 }
 
@@ -428,4 +429,36 @@ footer .inner-box .social-icon li .linkedin::before {
 
 footer .inner-box .social-icon li:nth-child(2) a::before {
     content: "\f0e1";
+}
+
+@media only screen and (max-width: 768px) {
+    .turnip-green .wrapper {
+        width: 65%;
+    }
+
+    .turnip-green .outter-box {
+        flex-direction: column;
+    }
+
+    .turnip-green .inner-box {
+        margin-top: 45px;
+    }
+
+    .about-us .content {
+        margin: 0 auto;
+    }
+
+    .about-us h4 {
+        margin-bottom: 45px;
+    }
+
+    .about-us p {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .about-us img {
+        display: unset;
+        margin: 0;
+    }
 }
