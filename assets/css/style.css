@@ -612,6 +612,18 @@ footer .inner-box .social-icon li:nth-child(2) a::before {
 }
 
 @media only screen and (max-width: 375px) {
+  .banner .down-button {
+    padding: 10px 14px;
+  }
+
+  .turnip-green .inner-box h2 {
+    font-size: 18px;
+  }
+
+  .turnip-green .inner-box p {
+    font-size: 16px;
+  }
+
   .about-us h4 {
     margin-bottom: 40px;
   }
@@ -620,12 +632,20 @@ footer .inner-box .social-icon li:nth-child(2) a::before {
     font-size: 16px;
   }
 
+  .menu .outter-box ul li h6 {
+      font-size: 10px;
+  }
+
   .contact .contact-content {
     padding-bottom: 120px;
   }
 
   .contact .contact-content .outter-box h6 {
     font-size: 20px;
+  }
+
+  .contact .contact-content .outter-box .inner-box {
+      font-size: 14px;
   }
 
   .contact .contact-content .form h6 {
