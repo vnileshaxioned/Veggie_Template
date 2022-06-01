@@ -435,6 +435,16 @@ footer .inner-box .social-icon li:nth-child(2) a::before {
   content: '\f0e1';
 }
 
+@media only screen and (max-width: 1230px) {
+  .menu .outter-box ul li h6 {
+    font-size: 16px;
+  }
+
+  .menu .outter-box ul li p {
+    font-size: 14px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .hamburger {
     display: block;
@@ -519,6 +529,8 @@ footer .inner-box .social-icon li:nth-child(2) a::before {
 
   .menu .outter-box {
     text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .menu .outter-box ul {
@@ -530,6 +542,10 @@ footer .inner-box .social-icon li:nth-child(2) a::before {
   }
 
   .menu .outter-box ul li h6 {
+    font-size: 12px;
+  }
+
+  .menu .outter-box ul li p {
     font-size: 12px;
   }
 
