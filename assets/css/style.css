@@ -432,6 +432,29 @@ footer .inner-box .social-icon li:nth-child(2) a::before {
 }
 
 @media only screen and (max-width: 768px) {
+  header nav {
+    text-align: right;
+    position: relative;
+  }
+
+  header nav .line {
+    width: 50px;
+    padding: 1px;
+    border: 1px solid #000;
+    position: absolute;
+  }
+
+  header nav .line:nth-child(2) {
+    margin-top: 6px;
+  }
+
+  header nav .line:nth-child(3) {
+    margin-top: 12px;
+  }
+
+  header nav ul {
+    display: none;
+  }
   .turnip-green .wrapper {
     width: 65%;
   }
