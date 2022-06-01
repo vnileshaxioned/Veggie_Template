@@ -3,9 +3,7 @@
   padding: 0;
 }
 
-.container {
-  position: relative;
-}
+.container { position: relative; }
 
 .wrapper {
   width: 90.44%;
@@ -13,19 +11,16 @@
   max-width: 1360px;
 }
 
+/* header section started here */
+
 header {
   position: absolute;
   width: 100%;
   z-index: 1;
 }
 
-.hamburger {
-  display: none;
-}
-
-nav {
-  padding: 22px 0;
-}
+.hamburger { display: none; }
+nav { padding: 20px 0; }
 
 nav ul {
   display: flex;
@@ -33,34 +28,28 @@ nav ul {
   list-style: none;
 }
 
-nav ul li {
+nav li {
   font-weight: 600;
   font-size: 16px;
   cursor: pointer;
   border: 1px solid transparent;
 }
 
-nav ul li:hover {
-  border: 1px solid #000;
-}
+nav li:hover { border: 1px solid #000; }
+nav ul .active { border: 1px solid #000; }
 
-nav ul .active {
-  border: 1px solid #000;
-}
-
-nav ul li a {
+nav a {
   text-decoration: none;
   color: #8e8685;
   padding: 12px;
   display: block;
 }
 
-.banner {
-  background-image: url(https://dummyimage.com/1288x799/E5E7E6/fff);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+/* header section ended here */
+
+/* banner section started here */
+
+.banner { background: url(https://dummyimage.com/1288x799/E5E7E6/fff) no-repeat center/cover; }
 
 .banner .wrapper {
   padding: 300px 0 357px 0;
@@ -68,18 +57,20 @@ nav ul li a {
 }
 
 .banner h1 {
-  font-size: 42px;
-  width: 445px;
+  font-size: 43px;
+  width: 39%;
+  letter-spacing: 1px;
   color: #3c3c3e;
   text-align: center;
-  margin-left: auto;
+  margin: 0 10px 0 auto;
 }
 
 .banner-content {
   text-indent: -9999px;
   position: absolute;
-  left: 47.8%;
-  top: 88.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5.5%;
   border: 2px solid #fff;
   border-radius: 50%;
 }
@@ -97,13 +88,12 @@ nav ul li a {
   float: right;
 }
 
-.banner-content:hover {
-  border-color: #000;
-}
+.banner-content:hover { border-color: #000; }
+.banner .down-button:hover::before { color: #000; }
 
-.banner .down-button:hover::before {
-  color: #000;
-}
+/* banner section ended here */
+
+/* turnip green section started here */
 
 .turnip-green {
   background-color: #f3c30f;
@@ -118,20 +108,22 @@ nav ul li a {
   list-style: none;
 }
 
-.turnip-green .inner-box {
-  flex-basis: 31.5%;
-}
+.turnip-green .inner-box { flex-basis: 31.5%; }
 
-.turnip-green .inner-box h2 {
+.turnip-green h2 {
   color: #414335;
   padding: 16px 0 24px 0;
   font-size: 18px;
 }
 
-.turnip-green .inner-box p {
+.turnip-green p {
   color: #696024;
   font-size: 18px;
 }
+
+/* turnip green section ended here */
+
+/* this monthy special started here */
 
 .this-month-specials h3 {
   font-size: 44px;
@@ -153,9 +145,7 @@ nav ul li a {
   line-height: 0;
 }
 
-.this-month-specials li:hover .content {
-  transform: scale(1);
-}
+.this-month-specials li:hover .content { transform: scale(1); }
 
 .this-month-specials .content {
   position: absolute;
@@ -164,7 +154,7 @@ nav ul li a {
   bottom: 0;
   right: 0;
   color: #666666;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, .05);
   font-size: 18px;
   text-align: center;
   transform: scale(0);
@@ -172,9 +162,7 @@ nav ul li a {
   transition: transform 0.3s ease-in;
 }
 
-.this-month-specials h4 {
-  margin: 34px 0 20px;
-}
+.this-month-specials h4 { margin: 34px 0 20px; }
 
 .this-month-specials h4::after {
   content: '';
@@ -190,12 +178,11 @@ nav ul li a {
   line-height: 1;
 }
 
-.about-us {
-  background-image: url(https://dummyimage.com/1360x716/DDDDDD/fff);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+/* this month special ended here */
+
+/* about us section started here */
+
+.about-us { background: url(https://dummyimage.com/1360x716/DDDDDD/fff) no-repeat center/cover; }
 
 .about-us .content {
   padding: 79px 10px 128px;
@@ -221,6 +208,10 @@ nav ul li a {
   margin-left: auto;
 }
 
+/* about us section ended here */
+
+/* mennu section started here */
+
 .menu h5 {
   font-size: 46px;
   text-align: center;
@@ -228,24 +219,20 @@ nav ul li a {
   padding: 70px 0 100px;
 }
 
-.menu .menu-categories {
+.menu-categories {
   display: flex;
   list-style: none;
   justify-content: center;
 }
 
-.menu .menu-categories li {
-  padding: 0 15px;
-}
+.menu-categories li { padding: 0 15px; }
 
-.menu .menu-categories li a {
+.menu-categories a {
   text-decoration: none;
   color: #434346;
 }
 
-.menu .menu-categories li a:hover {
-  color: #000;
-}
+.menu-categories a:hover { color: #000; }
 
 .menu .outter-box {
   display: flex;
@@ -258,78 +245,62 @@ nav ul li a {
   color: #7b7b84;
 }
 
-.menu .outter-box ul li h6 {
-  font-size: 20px;
-}
+.menu .outter-box h6 { font-size: 20px; }
+.menu .outter-box li { margin-bottom: 54px; }
+.menu .outter-box p { font-style: italic;}
 
-.menu .outter-box ul li {
-  margin-bottom: 54px;
-}
+/* mennu section ended here */
 
-.menu .outter-box ul li p {
-  font-style: italic;
-}
+/* contact section started here */
 
-.contact {
-  background-image: url(https://dummyimage.com/1360x716/E8E9EE/fff);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+.contact { background: url(https://dummyimage.com/1360x716/E8E9EE/fff) no-repeat center/cover; }
 
-.contact .contact-content {
+.contact-content {
   width: 516px;
   padding: 60px 0 138px 0;
   margin-left: auto;
   color: #767676;
 }
 
-.contact .contact-content h6 {
+.contact-content h6 {
   font-size: 48px;
   text-align: center;
 }
 
-.contact .contact-content .outter-box {
+.contact-content .outter-box {
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
 
-.contact .contact-content .outter-box h6 {
+.contact-content .outter-box h6 {
   font-size: 24px;
   text-align: left;
   margin: 94px 0 20px;
 }
 
-.contact .contact-content .outter-box .inner-box {
+.contact-content .inner-box {
   margin-right: 44px;
   font-size: 18px;
 }
 
-.contact .contact-content .outter-box .inner-box address {
-  font-style: normal;
-}
+.contact-content .inner-box address { font-style: normal; }
 
-.contact .contact-content .outter-box .inner-box a {
+.contact-content .inner-box a {
   text-decoration: none;
   color: #767676;
 }
 
-.contact .contact-content .form h6 {
+.contact-content .form h6 {
   font-size: 24px;
   text-align: left;
   margin: 52px 0 8px;
 }
 
-.contact .contact-content .form .outter-box {
-  justify-content: unset;
-}
+.contact-content .form .outter-box { justify-content: flex-start; }
+.contact-content .form-group:not(.button) { margin-right: 20px; }
 
-.contact .contact-content .form .form-group:not(.button) {
-  margin-right: 20px;
-}
-
-.contact .contact-content .form .form-content {
+.contact-content .form-content {
   padding: 14px 12px;
   width: 192px;
   font-size: 16px;
@@ -339,12 +310,12 @@ nav ul li a {
   background: transparent;
 }
 
-.contact .contact-content .form textarea.form-content {
+.contact-content textarea.form-content {
   width: 98%;
   resize: none;
 }
 
-.contact .contact-content .form .send-button {
+.contact-content .send-button {
   font-weight: 600;
   font-size: 16px;
   display: block;
@@ -355,18 +326,26 @@ nav ul li a {
   border: 1px solid #8e8e90;
 }
 
-.contact .contact-content .form .send-button:hover {
+.contact-content .send-button:hover {
   color: #000;
   background-color: #fff;
 }
 
-footer .outter-box {
+/* contact section ended here */
+
+/* footer section started here */
+
+footer {
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer .outter-box {
   padding: 34px 0;
   display: flex;
   border-top: 1px solid #afafaf;
-  width: 90.3%;
   list-style: none;
   justify-content: space-between;
 }
@@ -377,28 +356,26 @@ footer .copyright {
   font-size: 18px;
 }
 
-footer .copyright .green-text {
+footer .green-text {
   color: #0e820d;
   text-decoration: none;
 }
 
-footer .copyright .green-text:hover {
-  color: #015500;
-}
+footer .green-text:hover { color: #015500; }
 
-footer .copyright .green-text::before {
+footer .green-text::before {
   content: '\f004';
   font-family: 'fontAwesome';
   text-indent: 0;
   color: #ff0001;
 }
 
-footer .inner-box .social-icon {
+footer .social-icon {
   display: flex;
   list-style: none;
 }
 
-footer .inner-box .social-icon a {
+footer .social-icon a {
   text-indent: -9999px;
   border: 1px solid #767676;
   display: block;
@@ -408,11 +385,9 @@ footer .inner-box .social-icon a {
   height: 32px;
 }
 
-footer .inner-box .social-icon a:hover {
-  background-color: #fff;
-}
+footer .social-icon a:hover { background-color: #fff; }
 
-footer .inner-box .social-icon li a::before {
+footer .social-icon a::before {
   content: '\f39e';
   font-family: 'fontAwesome';
   text-indent: 0;
@@ -420,21 +395,12 @@ footer .inner-box .social-icon li a::before {
   float: right;
 }
 
-footer .inner-box .social-icon li a:hover::before {
-  color: #000;
-}
+footer .social-icon a:hover::before { color: #000; }
+footer .social-icon .facebook::before { transform: translate(-60%, 30%); }
+footer .social-icon .linkedin::before { transform: translate(-35%, 30%); }
+footer .social-icon li:nth-child(2) a::before { content: '\f0e1'; }
 
-footer .inner-box .social-icon li .facebook::before {
-  transform: translate(-60%, 30%);
-}
-
-footer .inner-box .social-icon li .linkedin::before {
-  transform: translate(-35%, 30%);
-}
-
-footer .inner-box .social-icon li:nth-child(2) a::before {
-  content: '\f0e1';
-}
+/* footer section ended here */
 
 @media only screen and (max-width: 1230px) {
   .menu .outter-box ul li h6 {
