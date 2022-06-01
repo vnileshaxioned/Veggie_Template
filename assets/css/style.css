@@ -19,6 +19,10 @@ header {
   z-index: 1;
 }
 
+.hamburger {
+  display: none;
+}
+
 nav {
   padding: 22px 0;
 }
@@ -432,29 +436,52 @@ footer .inner-box .social-icon li:nth-child(2) a::before {
 }
 
 @media only screen and (max-width: 768px) {
-  header nav {
-    text-align: right;
-    position: relative;
+  .hamburger {
+    display: block;
+    font-size: 0;
+    text-indent: -9999px;
   }
 
-  header nav .line {
-    width: 50px;
-    padding: 1px;
-    border: 1px solid #000;
-    position: absolute;
+  .hamburger::after {
+    content: '\f0c9';
+    float: right;
+    font-family: "fontAwesome";
+    color: #000;
+    font-size: 20px;
+    margin-top: 30px;
+    text-indent: 0;
   }
 
-  header nav .line:nth-child(2) {
-    margin-top: 6px;
-  }
-
-  header nav .line:nth-child(3) {
-    margin-top: 12px;
-  }
-
-  header nav ul {
+  nav {
+    height: 100vh;
+    width: 100%;
+    padding-top: 70px;
     display: none;
+    position: fixed;
+    left: 0;
+    background-color: #000;
   }
+
+  nav ul {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  nav ul li {
+    border-bottom: 1px solid #fff;
+  }
+
+  nav ul li a {
+    padding: 10px 0;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .hamburger:focus + nav {
+    display: block;
+  }
+
   .turnip-green .wrapper {
     width: 65%;
   }
